@@ -1,0 +1,18 @@
+Source: ruby-yarjuf
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: KURASHIKI Satoru <lurdan@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.5.0~)
+Standards-Version: 3.9.4
+#Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-yarjuf.git
+#Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-yarjuf.git;a=summary
+Homepage: http://github.com/natritmeyer/yarjuf
+XS-Ruby-Versions: all
+
+Package: ruby-yarjuf
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, ruby-rspec (>= 2.0), ruby-builder
+Description: Yet Another RSpec JUnit Formatter (for Hudson/Jenkins)
+ Yet Another RSpec JUnit Formatter (for Hudson/Jenkins)
